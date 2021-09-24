@@ -163,6 +163,7 @@ table
     }
     .flexbox /*общий класс блока, в котором находятся анкета и таблица*/
     {
+        display: -webkit-flex;
         display: flex;
         flex-direction: column; /*расположение сверху вниз*/
     }
