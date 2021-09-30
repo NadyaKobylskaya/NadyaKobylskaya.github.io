@@ -3,18 +3,19 @@
 <head>
     <title> Nadya Kobylskaya </title>
     <meta charset="utf-8">
-    <link rel = "stylesheet" href="style3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="style.css">
     </head>
     <body class="fon">
        <header>
-          <div>
-              <img class = "logotip_photo" src="F2-RcR-iMDo.png" alt="ARMBEERY"  width="150" height="150">
+          <div  class="logotip">
+              <img class = "logotip_photo" src="F2-RcR-iMDo.png" alt="ARMBEERY"  >
               <p class="loga">ARMBEERY</p>
           </div>
         </header>
         <main>
         <nav class="center">
-            <div class = "podch">
+            <div z>
              <ul class = "menu">
                  <li> <a href = "#Списокгиперссылок:" class="r"> Список гиперссылок</a></li>
                  <li> <a href = "#Таблица" class="r"> Таблица</a></li>
@@ -50,12 +51,14 @@
                 <p> Вене́ция (итал. Venezia [veˈnɛttsia] Информация о файле слушать, вен. Venèsia) — город на северо-востоке<a href = https://ru.wikipedia.org/wiki/Италия> Италии</a>. Административный центр области <a href = "https://ru.wikipedia.org/wiki/Венеция_(область)"> Венеция </a> и <a href = "https://ru.wikipedia.org/wiki/Венеция_(метрополитенский_город)"> одноимённой территориальной единицы </a>, приравненной к провинции. Образует коммуну, разделённую на 6 самоуправляемых районов. Покровителем города считается <a href = "https://ru.wikipedia.org/wiki/Марк_(евангелист)"> апостол Марк </a>,   <a href = "https://ru.wikipedia.org/wiki/Евангелисты"> евангелист </a>, чьи мощи хранятся здесь же в <a href = "https://ru.wikipedia.org/wiki/Собор_Святого_Марка">Соборе Св. Марка </a>, в связи с чем в город всегда приезжало много паломников-христиан со всего мира. </p>
             </li>
             <li> Ссылка-изображение:
-            <br /> <a href = "https://ru.wikipedia.org/wiki/Венеция" > <img alt="Венеция" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Collage_Venezia.jpg/1024px-Collage_Venezia.jpg"
-            height = "400" width = "500" > </a> </li>
+            <br /> <a href = "https://ru.wikipedia.org/wiki/Венеция" >
+            <img alt="Венеция" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Collage_Venezia.jpg/1024px-Collage_Venezia.jpg"
+            class="photo_1" > </a> </li>
             <li> Ссылки из прямоугольных и круглых областей картинки:
             <br />
             <img alt="Животные" src = "https://facenews.ua/media/illustration/celebrations/e305c004e38a5f3c.jpg"
-            height = "400" width = "500" usemap = "#click" >
+            class="photo_1"
+            usemap = "#click" >
             <map name = "click">
             <area alt="Рыжий котёнок" shape = "rect" coords = "100,100,300,300" href = https://4lapy.ru title = "Ссылка на зоомагазин:)">
             <area alt="Собачка" shape = "circle" coords = "350,350,350" href = "https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiOuIe8v_zyAhVD07IKHc4TBpQYABADGgJscg&ae=2&ohost=www.google.com&cid=CAASEuRoGibmN-UAr34yb3FPXu9QNA&sig=AOD64_3TY0Tg-MZk-ZSAq2KIRb8DSSPDLg&q&adurl&ved=2ahUKEwjdsf27v_zyAhWKuosKHUg7D8QQ0Qx6BAgEEAE&dct=1" title = "Ссылка на приют для животных">
@@ -81,7 +84,7 @@
 
              </tr>
              <tr>
-                 <th class  = "table">'6'</th>
+                 <th class  = "table" rowspan="2">'6'</th>
                  <th class = "table1">'7'</th>
                  <th class  = "table">'8'</th>
                  <th class = "table1">'9'</th>
@@ -89,11 +92,10 @@
 
              </tr>
              <tr>
-                 <th class = "table1">'11'</th>
-                 <th class  = "table">'12'</th>
-                 <th class = "table1">'13'</th>
-                 <th class  = "table">'14'</th>
-                 <th class = "table1">'15'</th>
+                 <th class = "table">'11'</th>
+                 <th class  = "table1">'12'</th>
+                 <th class = "table">'13'</th>
+                 <th class  = "table1">'14'</th>
 
              </tr>
              <tr>
@@ -108,8 +110,7 @@
                  <th class = "table1">'21'</th>
                  <th class  = "table">'22'</th>
                  <th class = "table1">'23'</th>
-                 <th class  = "table">'24'</th>
-                 <th class = "table1">'25'</th>
+                 <th class  = "table" colspan="2">'24'</th>
 
              </tr>
             </table>
@@ -145,15 +146,20 @@
             </p>
             <p>
                 <b> Сверхспособности </b><br>
-                <input type = "checkbox" name = "abilities" value = "fly">Летать<br>
-                <input type = "checkbox" name = "abilities" value = "get5">"Сдача сесии"<br>
-                <input type = "checkbox" name = "abilities" value = "mind reading">Чтение мыслей<br>
-                <input type = "checkbox" name = "abilities" value = "transparency">Прохождение сквозь стены
+                   <select>
+                    <option disabled selected>
+                        Выберете сверхспособность
+                    </option>
+                    <option value = "fly">Летать</option>
+                    <option value = "get5">"Сдача сесии"</option>
+                    <option value = "mind reading">Чтение мыслей</option>
+                    <option value = "transparency">Прохождение сквозь стены</option>
+                </select>
             </p>
             <div class="ggg">
             <p>
                 <b> Биография </b><br>
-                <textarea id = "Биография" wrap = "hard" name = "biography" rows = "12" cols = "40" placeholder = "Введите вашу биографию"></textarea>
+                <textarea id = "Биография" wrap = "hard" name = "biography" rows = "12" cols = "36" placeholder = "Введите вашу биографию"></textarea>
             </p>
             </div>
             <p>
