@@ -1,14 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
-.loga
-
+*
+{
+    margin: 0;
+}
+.logotip
 {
     font-family:"Architects Daughter";
-
+    display: flex;
+    align-items: center;
     color: #FA8072;
+    font-size: 30px;
 
-    margin: 0;
-    font-size: 2.5em;
-    padding: 50px
+}
+.logotip_photo
+{
+    width: 140px;
+
+}
+.photo_1
+{
+    width: 250px;
 }
 body
 {
@@ -16,57 +27,56 @@ body
 }
 header
 {
+    display: flex;
+
     background-color: antiquewhite;
 
     margin-bottom: 10px;
     height: 150px;
 }
-.logotip_photo
+ul.menu li
 {
-    float: left;
-    margin: 5px 5% 0 35%
-}
-ul.menu
-{
-    margin: 0; /* Обнуляем значение отступов */
-    padding-left: 4px; /* Значение полей */
-    margin: 0 auto;
-
-}
-   ul.menu li
-{
-    display: inline-block; /* Отображать как строчный элемент */
-    text-decoration: none;
-    margin-right: 50px; /* Отступ слева */
-    border: 1px solid #FFB6C1; /* Рамка вокруг текста */
-    padding: 10px 10px; /* Поля вокруг текста */
+    list-style-type: none;
+    border: 1px solid #FFB6C1; /*Рамка вокруг текста*/
+    padding: 10px 10px; /* Поля вокруг текста*/
     background-color: #FFB6C1;
     border-bottom: 3px solid #C71585;
 }
+nav.center
+{
+    display:flex;
+    flex-direction: column;/*элементы располагаются сверху */
+    align-items:center;/*прижатие по центру к левой стороне к началу побочного потока*/
+    background-color: #FFDAB9;
+    text-decoration: none;
+}
+.r
+{
+    display: flex;
+    justify-content: center;
+     width: 300px; /* Ширина слоя */
+    height: 25px;
+    text-decoration: none;
+    color: #C71585;
+}
+
 main
 {
     max-width: 960px;
     margin: 0 auto;
-
-    outline: 2px solid #FFB6C1; /*рамка по контуру меню */
+    outline: 2px solid #FFB6C1; /*рамка по контуру меню*/
     border: 3px solid #fff;
 }
 .menu
 {
     background: #FFDAB9;
     font-size: 20px; /* Размер шрифта */
-    padding: 10px 20px; /* Поля вокруг текста */
+    padding: 0; /* Поля вокруг текста */
     text-align: center;
-    text-decoration-color: aliceblue
+    text-decoration-color: aliceblue;
+    width: 320px;
+}
 
-}
-.podch a
-{
-    text-decoration: none
-}
-.r{
-    color: #C71585;
-}
 .ssulki
 {
     background-color: antiquewhite;
@@ -106,7 +116,6 @@ table
 }
 .nadpis
 {
-    color: azure;
     background-color:#BC8F8F;
     padding: 1px;
     font-size: 17px;
@@ -116,59 +125,10 @@ table
 {
     background-image: url( pngtree-cute-sun-breeze-background-picturebackgroundbusinesslovelychildjapanese-stylefestival-image_55783.jpg);
 }
-@media (max-width: 640px)
-{
-    *
-    {
-        margin: 0;
-    }
-    ul.menu li
-     {
-    display: block; /* Отображать как строчный элемент */
-         display: flex;
-         flex-direction: column;
-    text-decoration: none;
 
-    }
-    .loga
+ .flexbox /*общий класс блока, в котором находятся анкета и таблица*/
     {
-    display: flex;
-    font-family:"Architects Daughter";
-    color: #FA8072;
-    font-size: 2.5em;
-    }
-    .logotip_photo
-    {
-        display: flex;
-        justify-content: flex-start;
-        margin: 0;
 
-    }
-    .menu{
-        display: inline-flex;
-        flex-direction: column;
-
-    }
-    .r
-    {
-        display: flex;
-        margin: 0 250px;
-        justify-content: center;
-        width: 300px; /* Ширина слоя */
-        height: 25px;
-
-
-    }
-    nav.center
-    {
-        display:flex;
-        flex-direction: column;/*элементы располагаются сверху */
-        align-items:center;/*прижатие по центру к левой стороне к началу побочного потока*/
-        background-color: #FFDAB9;
-
-    }
-    .flexbox /*общий класс блока, в котором находятся анкета и таблица*/
-    {
         display: flex;
         flex-direction: column; /*расположение сверху вниз*/
     }
@@ -176,6 +136,76 @@ table
     .flexbox div:nth-of-type(2)
     {
         order: -1;/*меняет расположение таблицы и анкуты местами сверху вниз*/
+
+    }
+
+    .tablecol, .anket, .spisok
+    {
+        padding-top: 15px;
+
+    }
+
+@media (min-width: 740px)
+
+{
+header
+{
+        display: flex;
+        justify-content: center;
+}
+ ul.menu li
+{
+   display: inline-block; /* Отображать как строчный элемент */
+   text-decoration: none;
+   margin-right: 50px; /* Отступ слева */
+   border: 1px solid #FFB6C1; /* Рамка вокруг текста */
+   padding: 10px 10px; /* Поля вокруг текста */
+   background-color: #FFB6C1;
+   border-bottom: 3px solid #C71585;
+}
+.logotip_photo
+{
+    margin-right: 50px;
+        width: 150px;
+}
+.loga
+    {
+        font-size: 70px;
+    }
+.photo_1
+{
+    width: 400px;
+}
+
+.menu
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.r
+{
+    margin: 0;
+    width: 130px; /* Ширина слоя */
+    height: 40px;
+}
+nav.center
+{
+    display:flex;
+    flex-direction: column;/*элементы располагаются сверху */
+    align-items:center;/*прижатие по центру к левой стороне к началу побочного потока*/
+    background-color: #FFDAB9;
+}
+    .flexbox /*общий класс блока, в котором находятся анкета и таблица*/
+    {
+
+        display: flex;
+        flex-direction: column; /*расположение сверху вниз*/
+    }
+
+    .flexbox div:nth-of-type(2)
+    {
+        order: 0;/*меняет расположение таблицы и анкуты местами сверху вниз*/
 
     }
 
