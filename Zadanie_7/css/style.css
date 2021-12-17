@@ -117,11 +117,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .slider .slick-arrow.slick-prev {
 	left: 0;
-	background: url("../../img/svg/arrow_left.svg") 0 0/100% no-repeat;
+	background: url("../img/svg/arrow_left.svg") 0 0/100% no-repeat;
 }
 .slider .slick-arrow.slick-next {
 	right: 0;
-	background: url("../../img/svg/arrow_right.svg") 0 0/100% no-repeat;
+	background: url("../img/svg/arrow_right.svg") 0 0/100% no-repeat;
 }
 .slider .slick-arrow.slick-disabled {
 	opacity: 0.4;
