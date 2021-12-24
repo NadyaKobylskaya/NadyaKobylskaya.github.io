@@ -1,6 +1,6 @@
 "use strict";
 
-let button = document.getElementById("start");
+let button = document.getElementById("start"); //c помощью id получаем эл-ты страницы и записываем их в переменные
 let popup = document.getElementById("popup");
 let popupwrapper = document.getElementById("popupwrapper");
 popupwrapper.style.display = "none";
@@ -8,20 +8,21 @@ popup.style.display = "none";
 let exit = document.getElementById("exit");
 
 
-window.addEventListener("DOMContentLoaded",
+window.addEventListener("DOMContentLoaded",  //страница загружена
     function (event) {
-       button.addEventListener("click", function (event) {
-           popup.style.display = "block";
+       button.addEventListener("click", function (event) { //добавляем событие, реагирущее на нажатие кнопки
+           popup.style.display = "block"; //сплывающее окно
            popupwrapper.style.display = "block";
            button.style.display = "none";
     });
-    exit.addEventListener("click", function (event) {
+    exit.addEventListener("click", function (event) { //добавляем событие, реагирущее на нажатие кнопки крестик (скрывает окно)
         popup.style.display = "none";
         popupwrapper.style.display = "none";
         button.style.display = "block";
  });
+    
 });
-function clear(){
+function clear(){ //очищает все поля
     let namefield = document.getElementsByName("name");
     let email = document.getElementsByName("email");
     let message = document.getElementsByName("message");
